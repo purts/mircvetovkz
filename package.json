@@ -1,0 +1,21 @@
+{
+  "name": "workspace",
+  "version": "0.0.1",
+  "description": "Сайт Мир цветов",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Purts",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.6",
+    "jade": "^1.8.2",
+    "mongoose": "^3.8.21",
+    "stylus": "^0.49.3",
+    "tylus": "0.0.3"
+  },
+  "devDependencies": {
+    "bower": "^1.3.12"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "authors": [
+    "Dmitriy Klimovich <klimovichdr@gmail.com>"
+  ],
+  "description": "Сайт Мир Цветов",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "angular": "~1.3.8",
+    "bower": "*",
+    "bootstrap": "~3.3.1",
+    "angular-resource": "~1.3.8"
+  }
+}

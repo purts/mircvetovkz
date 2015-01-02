@@ -1,0 +1,11 @@
+extends ../includes/layout
+
+block main-content
+    div(ng-controller='userCtrl')
+        table.table.table-bordered
+            thead
+                tr
+                    th Пользователь
+            tbody
+                tr(ng-repeat='user in users')
+                    td {{user.UserName}}  
