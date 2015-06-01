@@ -1,5 +1,5 @@
-var mongoose = require("mongoose");
-var Schema = mongoose.Schema;
+var mongoose = require("mongoose"),
+    Schema = mongoose.Schema;
 
 var userSchema = new Schema({
 	UserName: String,
@@ -10,7 +10,7 @@ var userSchema = new Schema({
 	Roles: [String]
 });
 
-var User = mongoose.model('User', userSchema);
+var User = mongoose.model('User', userSchema, 'Users');
 
 function createDefaultUsers() {
     User.find({}).exec(function (error, collection) {

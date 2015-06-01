@@ -1,11 +1,21 @@
 extends ../includes/layout
 
 block main-content
-    div(ng-controller='userCtrl')
-        table.table.table-bordered
-            thead
-                tr
-                    th Пользователь
-            tbody
-                tr(ng-repeat='user in users')
-                    td {{user.UserName}}  
+    .navbar.navbar-default.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand('/')  Ярко
+            .navbar-collapse.collapse
+                ul.nav.navbar-nav
+                    li
+                        a(href='/') Home
+                div(ng-include="'/partials/account/navbar-login'")
+                
+                
+    // section.content
+    //     div(ng-view)
+    
+    // footer.container.text-center
+    //     p &copy 2015 Ярко
+        
+    

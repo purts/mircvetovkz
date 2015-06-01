@@ -1,6 +1,8 @@
 var mongoose  = require("mongoose"),
     userModel = require("../models/User"),
-    flowerModel = require("../models/Flower");
+    productModel = require("../models/Product"),
+    categoryModel = require("../models/Category")
+    ;
     
 module.exports = function (config) {
     mongoose.connect(config.db);
@@ -11,5 +13,6 @@ module.exports = function (config) {
     });
     
     userModel.createDefaultUsers();
-    flowerModel.createDefaultImages();
+    productModel.createDefaultProducts();
+    categoryModel.createDefaultCategories();
 };

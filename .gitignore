@@ -1,6 +1,6 @@
 .c9
 node_modules
 server/data
-server/config/config.js
+server/config
 public/bower_components
 node_modules
