@@ -2,5 +2,6 @@
 node_modules
 server/data
 server/config
+server/utilities
 public/bower_components
 .idea/
