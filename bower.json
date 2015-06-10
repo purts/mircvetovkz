@@ -2,9 +2,10 @@
   "name": "workspace",
   "version": "0.0.0",
   "authors": [
-    "Dmitriy Klimovich <klimovichdr@gmail.com>"
+    "Dmitriy Klimovich <klimovichdr@gmail.com>",
+    "Ivan Saldayev <SetInNirvana@gmail.com"
   ],
-  "description": "Сайт Мир Цветов",
+  "description": "Bower siteNodeJS",
   "license": "MIT",
   "private": true,
   "dependencies": {
