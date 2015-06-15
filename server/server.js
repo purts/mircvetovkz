@@ -1,19 +1,20 @@
-var express = require("express");
+global.rootRequire = function (str) {
+    return require(__dirname + "/" + str);
+}
 
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+var config = rootRequire("config/config")[env];
+rootRequire("config/mongoose")(config);
 
+var express = require("express");
 var app = express();
-
-var config = require("./config/config")[env];
-
-require("./config/express")(app, config);
-
-require("./config/mongoose")(config);
-
-require("./config/passport")();
-
-require("./config/routes")(app);
-
+rootRequire("config/express")(app, config);
+rootRequire("config/routes")(app);
 app.listen(config.port, config.ip);
+
+rootRequire("config/passport")();
+
 console.log('Listening ip ' + config.ip + ' ...');
 console.log('Listening port ' + config.port + ' ...');
+
+console.log();
