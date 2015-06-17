@@ -6,9 +6,21 @@ exports.GetRootMenu = function(req, res){
         if (e){
             console.log(e.message);
             res.status(500);
-            res.send(e.message);
+            res.send(e);
         }else{
             res.send(c);
+        }
+    });
+}
+
+exports.SetRootMenu = function(req, res){
+    RootMenu = req;
+    RootMenu.save(function(err, req){
+        if (err){
+            res.status(500);
+            res.send(err);
+        }else{
+            res.send('ok');
         }
     });
 }
